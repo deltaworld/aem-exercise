@@ -16,11 +16,20 @@
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <!-- ====================================================================== -->
+  <!-- P A R E N T  P R O J E C T  D E S C R I P T I O N                      -->
+  <!-- ====================================================================== -->
+  <parent>
     <groupId>com.adobe.aem.guides</groupId>
     <artifactId>aem-guides-wknd</artifactId>
-    <packaging>pom</packaging>
     <version>0.0.3-SNAPSHOT</version>
-   <description>WKND Sites Project</description>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+    <artifactId>aem-guides-wknd.wknd</artifactId>
+    <packaging>pom</packaging>
+
+    <description>WKND Sites Project</description>
 
     <modules>
         <module>all</module>
@@ -32,7 +41,6 @@
         <module>it.tests</module>
         <module>it.launcher</module>
         <module>repository-structure</module>
-        <module>dispatcher</module>
     </modules>
 
     <properties>
